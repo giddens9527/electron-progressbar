@@ -262,7 +262,7 @@ class ProgressBar {
 			this._updateTaskbarProgress();
 		});
 		
-		this._window.loadURL(`file://${__dirname}/index.html`);
+		this._window.loadURL(`file://${__dirname}/../../node_modules/electron-progressbar/source/index.html`);
 		
 		this._window.webContents.on('did-finish-load', () => {
 			if (this._options.text !== null) {
